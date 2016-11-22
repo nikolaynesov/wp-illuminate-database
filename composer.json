@@ -1,0 +1,21 @@
+{
+  "name": "nikolaynesov/wp-illuminate-database",
+  "type": "wordpress-plugin",
+  "description": "Illuminate Database wrapper plugin for WordPress.",
+  "authors": [
+    {
+      "name": "Nikolay Nesov",
+      "email": "nikolaynesov@gmail.com"
+    }
+  ],
+  "keywords": [
+    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp", "illuminate", "database", "eloquent"
+  ],
+
+  "require": {
+    "php": ">=5.6",
+    "composer/installers": "~1.0.12",
+    "illuminate/database": "^5.3.0"
+  }
+
+}
