@@ -7,3 +7,24 @@ Text Domain: wpidb
 Domain Path: /languages/
 Version: 0.1
 */
+
+include_once ( plugin_dir_path( __FILE__ ) . '/vendor/autoload.php');
+
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+$capsule = new Capsule();
+
+$capsule->addConnection([
+    'driver'    => 'mysql',
+    'host'      => DB_HOST,
+    'database'  => DB_NAME,
+    'username'  => DB_USER,
+    'password'  => DB_PASSWORD,
+    'charset'   => DB_CHARSET,
+    'collation' => DB_COLLATE,
+    'prefix'    => '',
+]);
+
+$capsule->setAsGlobal();
+
+$capsule->bootEloquent();
