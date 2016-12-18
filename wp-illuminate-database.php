@@ -8,8 +8,6 @@ Domain Path: /languages/
 Version: 0.1
 */
 
-include_once ( plugin_dir_path( __FILE__ ) . '/vendor/autoload.php');
-
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 $capsule = new Capsule();
