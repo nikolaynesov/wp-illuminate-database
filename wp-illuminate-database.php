@@ -9,6 +9,8 @@ Version: 0.1
 */
 
 use Illuminate\Database\Capsule\Manager as Capsule;
+use Illuminate\Events\Dispatcher;
+use Illuminate\Container\Container;
 
 $capsule = new Capsule();
 
@@ -22,6 +24,8 @@ $capsule->addConnection([
     'collation' => DB_COLLATE,
     'prefix'    => '',
 ]);
+
+$capsule->setEventDispatcher(new Dispatcher(new Container));
 
 $capsule->setAsGlobal();
 
