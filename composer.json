@@ -17,7 +17,8 @@
     "composer/installers": "^1.2.0",
     "illuminate/pagination": "^5.4.0",
     "illuminate/database": "^5.4.0",
-    "illuminate/events": "^5.4.0"
+    "illuminate/events": "^5.4.0",
+    "jdavidbakr/replaceable-model": "^1.0"
   }
 
 }
